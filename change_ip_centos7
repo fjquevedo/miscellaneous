@@ -1,0 +1,12 @@
+0. Check status network manager.
+systemctl status NetworkManager.service
+
+1. Editar network inteface X (eth0)
+nano /etc/sysconfig/network-scripts/ifcfg-eth0
+
+IPADDR=192.168.1.10
+NETMASK=255.255.255.0
+GATEWAY=192.168.1.1
+
+2. Reiniciar servicio
+/usr/bin/systemctl restart network.service
